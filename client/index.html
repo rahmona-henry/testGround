@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>OCR Communications</title>
+	<style type="text/css">
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; background: #f1f1f1;}
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;}
+		.image_fix {display:block;}
+
+		p {margin: 1em 0;}
+
+		table td {border-collapse: collapse;}
+
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; table-layout: fixed; margin: 0 auto;  }
+		table table { table-layout: auto; margin: 0 auto; }
+
+		@media (max-width: 480px) {
+			body {
+				background: #f1f1f1;
+			}
+
+			.full-width {
+				width: 100%;
+			}
+
+			.remove-background {
+				background: #fff;
+			}
+
+			.display-block {
+				display: block;
+			}
+
+			div[class=mobile-show] {
+				display: block !important;
+				max-height: none !important;
+			}
+
+
+			.headline {
+				font-size: 16px !important;
+				line-height: 22px !important;
+			}
+
+			.intro-container {
+				padding: 10px 20px 20px 20px;
+			}
+			.intro-title {
+				height: auto;
+			}
+			.intro-wrapper {
+				padding: 0 0 10px 0;
+				width: auto;
+				text-align: left;
+				display: block;
+			}
+			.intro-content {
+				text-align: left;
+			}
+			.intro-image {
+				display: block;
+				width: 100%;
+			}
+			.intro-image-img {
+				width: 100%;
+			}
+
+			.headline-image {
+				padding-bottom: 10px;
+			}
+
+			.main-h-discover {
+				margin: auto;
+				padding-top: 10px;
+			}
+
+
+			.box-border {
+				border-left: 0 !important;
+				border-right: 0 !important;
+			}
+			.box-text td {
+				padding: 20px 20px 10px 20px;
+			}
+			.box-button {
+				display: block;
+				text-align: center;
+			}
+			.box-button td {
+				display: inline-block;
+				padding-bottom: 20px;
+			}
+
+			.footer-bg {
+				background: #fff;
+			}
+			.footer-social {
+				text-align: center;
+			}
+			.footer-social-icon {
+				display: inline-block;
+				width: 40px;
+			}
+			.footer-social-img {
+				 width: 30px;
+			}
+			.footer-text {
+				padding: 0 20px;
+			}
+			.footer-text-top {
+				padding-top: 20px;
+			}
+
+			.display-none {
+				display: none;
+			}
+
+			.view-in-browser {
+				padding: 20px;
+				width: 50%;
+			}
+			.logo {
+				padding: 20px;
+			}
+
+			.image-center {
+				margin: auto;
+			}
+
+			.data-table {
+				padding: 5px;
+			}
+		}
+
+		.remove-textd {
+			text-decoration: none;
+		}
+	</style>
+
+	<!--[if lte mso 11]>
+    <style type="text/css">
+    .wtf {
+    	width: 560px;
+    }
+    </style>
+<![endif]-->
+</head>
+<body>
+<table width="600" cellpadding="0" cellspacing="0" border="0" style="min-width:600px;width:600px;" class="display-none">
+	<tr>
+		<td height="1" style="font-size: 1px; line-height: 1px; height: 1px;">
+			<img src="/spacer.png" height="1" width="600" style="max-height:15px; min-height:1px; display:block; width:600px; min-width:600px;" />
+		</td>
+	</tr>
+</table>
+<div style="width: 100%; height: 100%; background: #f1f1f1;">
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="table-layout: fixed;" align="center" bgcolor="#f1f1f1" width="100%">
+	<tr>
+		<td valign="top">
+			<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+				<tr>
+					<td>
+
+						<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td background="images/bg-heading.png" class="remove-background full-width" width="560" height="78" valign="top">
+									<!--[if gte mso 9]>
+									<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:560px;height:78px;">
+									<v:fill type="tile" src="/bg-heading.png" color="#ffffff" />
+									<v:textbox inset="0,0,0,0">
+									<![endif]-->
+
+									<table width="520" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+										<tr class="display-none">
+											<td colspan="2" height="15" style="height: 15px; font-size: 15px; line-height: 15px;">&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="260" valign="top" class="view-in-browser" style="font-size: 10px; font-family: Arial; color: #012a61;">
+<singleline label='Browser'><webversion>View in browser</webversion></singleline><br />
+<br />
+<singleline label='Forward'><forwardtoafriend>Forward this email</forwardtoafriend></singleline>
+											</td>
+											<td width="260" align="right" valign="top" class="logo">
+												<a href="http://www.ocr.org.uk/"><img src="images/logo.png" class="image_fix"></a>
+											</td>
+										</tr>
+									</table>
+
+									<!--[if gte mso 9]>
+									</v:textbox>
+									</v:rect>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+
+
+						<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td width="320" class="intro-title" height="45" style="font-family: Arial; font-size: 26px; color: #ffffff;"><img editable src="images/title.png" class="full-width image_fix" width="320" style="display: block;" /></td>
+								<td width="240" class="display-none">
+									<img editable src="images/title-spacer.png" style="display: block; width: 240px; height: 45px;" width="240" class="image_fix">
+								</td>
+							</tr>
+						</table>
+
+
+
+						<table width="600" class="full-width box-border" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff" style="border: 3px solid #00245d">
+							<tr class="display-none">
+								<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" class="full-width intro-container" style="font-family: Arial; font-size: 14px; line-height: 19px;">
+									<table width="540" class="full-width" cellpadding="0" cellspacing="0" align="center" border="0">
+										<tr>
+											<td width="300" class="full-width intro-wrapper" valign="top" align="right">
+												<table width="300" class="full-width">
+													<tr>
+														<td width="295" align="left" class="full-width intro-content" style="font-family: Arial; font-size: 12px; line-height: 19px; color: #00245d;">
+														  <span style="font-size: 19px; font-weight: bold; line-height: 26px;" class="headline"><singleline label='Email headline'>This is a headline about the Industrial Revolution</singleline></span><br>
+															<multiline label='Main story copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br />
+</multiline>
+                                                            <img editable src="images/button-discover.png" align="center" width="158" class="image_fix main-h-discover">
+														</td>
+														<td width="5">&nbsp;</td>
+													</tr>
+
+
+												</table>
+										  </td>
+
+											<td width="10" class="display-none">&nbsp;</td>
+
+											<td width="230" class="intro-image" valign="top">
+												<img editable src="images/newsletter-main.png" width="230" class="image_fix intro-image-img">
+											</td>
+										</tr>
+                                     </table>
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+                            <tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" class="full-width intro-container" style="font-family: Arial; font-size: 14px; line-height: 19px;">
+									<table width="540" class="full-width" cellpadding="0" cellspacing="0" align="center" border="0">
+										<tr>
+                         <td width="540" align="left" class="full-width intro-content" style="font-family: Arial; font-size: 12px; line-height: 19px; color: #00245d; "><multiline label='Main story copy1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br />
+</multiline>
+                                                        <a href="#">    <img editable src="images/button-discover.png" align="right" width="158" class="image_fix main-h-discover"></a>
+														</td></tr></table></td>
+                            <td width="20" class="display-none">&nbsp;</td>
+                            </tr>
+							<tr class="display-none">
+								<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+							</tr>
+						</table>
+
+
+						<repeater>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" height="30" style="height: 30px; line-height: 30px; font-size: 30px;" class="full-width">
+									<img src="images/bg-indent.png" class="full-width image_fix" width="560" height="30" style="display: block;">
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+						</table>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td style="border: 3px solid #00245d" class="box-border">
+									<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td class="display-none" width="125" valign="top">
+															<img editable src="images/bg-box-image.png" alt="" width="125" class="image_fix">
+														</td>
+
+														<td width="20">&nbsp;</td>
+
+														<td width="395" class="full-width" valign="top">
+															<table width="395" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<span style="font-size: 19px; font-weight: bold; color: #00245d; line-height: 26px;" class="headline"><singleline label='1st panel headline'>This is a headline about Henry VIII</singleline></span><br>
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+                                        <tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="540" class="full-width" valign="top">
+															<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+							</repeater>
+						<repeater>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" height="30" style="height: 30px; line-height: 30px; font-size: 30px;" class="full-width">
+									<img src="images/bg-indent.png" class="full-width image_fix" width="560" height="30" style="display: block;">
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+						</table>
+
+
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td style="border: 3px solid #00245d" class="box-border">
+									<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="395" class="full-width" valign="top">
+															<table width="395" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<span style="font-size: 19px; font-weight: bold; color: #00245d; line-height: 26px;" class="headline"><singleline label='2nd panel headline'>This is a headline about Henry VIII</singleline></span><br>
+																		<multiline label='2nd panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+
+														<td width="20">&nbsp;</td>
+
+														<td class="display-none" width="125" valign="top">
+															<img editable src="images/bg-box-image.png" alt="" width="125" class="image_fix">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+                                         <tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="540" class="full-width" valign="top">
+															<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+
+						</repeater>
+                       <repeater>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" height="30" style="height: 30px; line-height: 30px; font-size: 30px;" class="full-width">
+									<img src="images/bg-indent.png" class="full-width image_fix" width="560" height="30" style="display: block;">
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+						</table>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td style="border: 3px solid #00245d" class="box-border">
+									<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td class="display-none" width="125" valign="top">
+															<img editable src="images/bg-box-image.png" alt="" width="125" class="image_fix">
+														</td>
+
+														<td width="20">&nbsp;</td>
+
+														<td width="395" class="full-width" valign="top">
+															<table width="395" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<span style="font-size: 19px; font-weight: bold; color: #00245d; line-height: 26px;" class="headline"><singleline label='1st panel headline'>This is a headline about Henry VIII</singleline></span><br>
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+                                        <tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="540" class="full-width" valign="top">
+															<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+							</repeater>
+                       <repeater>
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" height="30" style="height: 30px; line-height: 30px; font-size: 30px;" class="full-width">
+									<img src="images/bg-indent.png" class="full-width image_fix" width="560" height="30" style="display: block;">
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+						</table>
+
+
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td style="border: 3px solid #00245d" class="box-border">
+									<table width="560" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="395" class="full-width" valign="top">
+															<table width="395" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<span style="font-size: 19px; font-weight: bold; color: #00245d; line-height: 26px;" class="headline"><singleline label='2nd panel headline'>This is a headline about Henry VIII</singleline></span><br>
+																		<multiline label='2nd panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+
+														<td width="20">&nbsp;</td>
+
+														<td class="display-none" width="125" valign="top">
+															<img editable src="images/bg-box-image.png" alt="" width="125" class="image_fix">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+                                         <tr>
+											<td colspan="3">
+												<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+													<tr>
+														<td width="540" class="full-width" valign="top">
+															<table width="540" class="full-width" cellpadding="0" cellspacing="0" border="0">
+																<tr class="box-text">
+																	<td style="font-family: Arial; font-size: 12px; line-height: 19px;">
+																		<multiline label='1st panel copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</multiline>
+																	</td>
+																</tr>
+																<tr class="box-button">
+																	<td align="right">
+																		<a href="#">
+																			<img editable src="images/button-discover.png" width="158" class="image_fix">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr class="display-none">
+											<td colspan="3" height="20" style="font-size: 20px; line-height: 20px; height: 20px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+
+						</repeater>
+
+
+						<table width="600" class="full-width" cellpadding="0" cellspacing="0" border="0" align="center">
+							<tr>
+								<td width="20" class="display-none">&nbsp;</td>
+								<td width="560" height="30" style="height: 30px; line-height: 30px; font-size: 30px;" class="full-width">
+									<img src="images/bg-indent.png" class="full-width image_fix" width="560" height="30" style="display: block;">
+								</td>
+								<td width="20" class="display-none">&nbsp;</td>
+							</tr>
+						</table>
+
+
+
+						<table width="560" class="footer-bg footer-social full-width" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+							<tr>
+								<td width="20">&nbsp;</td>
+								<td width="360" class="display-none" height="26" bgcolor="#00245d">&nbsp;</td>
+
+								<td width="5" class="display-none">&nbsp;</td>
+
+								<td width="27" class="footer-social-icon">
+												<a href="https://www.facebook.com/ocrexams"><img editable border="0" src="/icon-fb.png" class="image_fix footer-social-img" width="27"></a>
+											</td>
+
+											<td width="5" class="display-none">&nbsp;</td>
+
+											<td width="27" class="footer-social-icon">
+												<a href="https://twitter.com/ocrexams/"><img editable border="0" src="/icon-twitter.png" class="image_fix footer-social-img" width="27"></a>
+											</td>
+
+											<td width="5" class="display-none">&nbsp;</td>
+
+											<td width="27" class="footer-social-icon">
+												<a href="https://www.linkedin.com/company/ocr"><img editable border="0" src="/icon-linkedin.png" class="image_fix footer-social-img" width="27"></a>
+											</td>
+
+											<td width="5" class="display-none">&nbsp;</td>
+
+											<td width="27" class="footer-social-icon">
+												<a href="https://www.youtube.com/user/ocrexams"><img editable border="0" src="/icon-youtube.png" class="image_fix footer-social-img" width="27"></a>
+											</td>
+
+											<td width="5" class="display-none">&nbsp;</td>
+
+											<td width="27" class="footer-social-icon">
+
+												<a href="http://www.ocr.org.uk/rss/"><img editable border="0" src="/icon-rss.png" class="image_fix footer-social-img" width="27"></a>
+											</td>
+
+								<td width="20">&nbsp;</td>
+							</tr>
+						</table>
+
+
+
+						<table width="560" class="footer-bg full-width" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family: Arial; font-size: 9px; line-height: 12px;" bgcolor="#ffffff">
+							<tr class="display-none">
+								<td colspan="3" height="10" style="height: 10px; font-size: 10px; line-height: 10px;">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="20">&nbsp;</td>
+								<td width="520" class="full-width footer-text footer-text-top"><multiline label='footer panel 1'>© 2016 OCR. We hope you find the contents of this email of interest. If you no longer wish to receive our email updates please </multiline><span style="color: #00245d; text-decoration: underline; font-weight: bold;"><unsubscribe>click here to unsubscribe</unsubscribe></span><multiline label='footer panel 1a'> to remove your details. If you are having trouble viewing this email, please  </multiline><webversion><span style="color: #00245d; text-decoration: underline; font-weight: bold;">open the email in your web browser</span></webversion>.<br />
+<br />
+</td>
+								<td width="20">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="20">&nbsp;</td>
+								<td width="520" class="full-width footer-text" style="font-size: 8px;"><multiline label='Footer copy'>Oxford Cambridge and RSA Examinations is a Company Limited by Guarantee Registered in England.<br />
+ Registered office: 1 Hills Road, Cambridge CB1 2EU. Company number: 3484466</multiline></td>
+								<td width="20">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" height="10" style="height: 10px; font-size: 10px; line-height: 10px;">&nbsp;</td>
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
